@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/vue"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="/main.css">
+
+	<title>Vueify Bootstrap</title>
+</head>
+<body>
+	<div id="app">
+		<div class="container-fluid">
+			<h3>Click to launch the modals:</h3>
+
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_one">Launch Modal 1</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_two">Launch Modal 2</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_three">Launch Modal 3</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_four">Launch Modal 4</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_five">Launch Modal 5</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_six">Launch Modal 6</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_seven">Launch Modal 7</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_eight">Launch Modal 8</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_nine">Launch Modal 9</button>
+			<button class="modalLaunchButton" type="button" data-toggle="modal" data-target="#Modal_ten">Launch Modal 10</button>
+
+			<modal
+				id="Modal_one" 
+				title="Modal #1"
+				body="I AM #1!"
+			>	
+			</modal>
+			<modal
+				id="Modal_two" 
+				title="Modal #2"
+				body="I AM #2!"
+			>	
+			</modal>
+			<modal
+				id="Modal_three" 
+				title="Modal #3"
+				body="I AM #3!"
+			>	
+			</modal>
+			<modal
+				id="Modal_four" 
+				title="Modal #4"
+				body="I AM #4!"
+			>	
+			</modal>
+			<modal
+				id="Modal_five" 
+				title="Modal #5"
+				body="I AM #5!"
+			>	
+			</modal>
+			<modal
+				id="Modal_six" 
+				title="Modal #6"
+				body="I AM #6!"
+			>	
+			</modal>
+			<modal
+				id="Modal_seven" 
+				title="Modal #7"
+				body="I AM #7!"
+			>	
+			</modal>
+			<modal
+				id="Modal_eight" 
+				title="Modal #8"
+				body="I AM #8!"
+			>	
+			</modal>
+			<modal
+				id="Modal_nine" 
+				title="Modal #9"
+				body="I AM #9!"
+			>	
+			</modal>
+			<modal
+				id="Modal_ten" 
+				title="Modal #10"
+				body="I AM #10!"
+	>	
+			</modal>
+		</div>
+	</div>
+
+<!-- MODAL TEMPLATE SCRIPT -->
+<script id="modal-script" type="text/template">
+	<div class="modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">{{title}}</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>{{body}}</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+</body>
+</html>

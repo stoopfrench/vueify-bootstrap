@@ -1,0 +1,17 @@
+.modalLaunchButton {
+
+	display: block;
+	width: 15vw;
+	padding: .5rem 0;
+	margin: .5rem;
+	border: 1px solid black;
+	border-radius: .5rem;
+	background-color: grey;
+	color: black;
+}
+
+h3 {
+
+	margin: 1rem;
+	margin-left: .5rem;
+}
